@@ -25,10 +25,10 @@ public class BookKeeper {
 	
 	private InvoiceFactory iFactory;
 	
-	public Invoice issuance(ClientData client, List<RequestItem> items) {
-		Invoice invoice = iFactory.create(client);
+	public Invoice issuance(InvoiceRequest request) {
+		Invoice invoice = iFactory.create(request.getClient());
 
-		for (RequestItem item : items) {
+		for (RequestItem item : request.getItems()) {
 			Money net = item.getTotalCost();
 			BigDecimal ratio = null;
 			String desc = null;
