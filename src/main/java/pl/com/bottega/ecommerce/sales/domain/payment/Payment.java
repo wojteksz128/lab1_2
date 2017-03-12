@@ -27,7 +27,7 @@ public class Payment {
 
 	private Id aggregateId;
 
-	private static PaymentFactory paymentFactory = new PaymentFactory();
+	private static IPaymentFactory paymentFactory = new PaymentFactory();
 
 
 	public Payment(Id aggregateId, ClientData clientData, Money amount) {

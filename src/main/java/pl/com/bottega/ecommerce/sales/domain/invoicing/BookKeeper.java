@@ -24,7 +24,7 @@ import pl.com.bottega.ecommerce.sharedkernel.Money;
 
 public class BookKeeper {
 
-	private static InvoiceFactory invoiceFactory = new InvoiceFactory();
+	private static IInvoiceFactory invoiceFactory = new InvoiceFactory();
 
 	private static ITaxCalculator taxCalculator = new DefaultTaxCalculator();
 
