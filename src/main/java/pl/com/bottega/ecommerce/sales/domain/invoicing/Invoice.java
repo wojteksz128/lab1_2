@@ -28,15 +28,9 @@ public class Invoice  {
 
 
 	private ClientData client;
-
-
 	private Money net;
-
 	private Money gros;
-
 	private List<InvoiceLine> items;
-
-
 	private Id id;
 
 	private Invoice(Id invoiceId, ClientData client) {
